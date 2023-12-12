@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args){
+       Scanner scan = new Scanner(System.in) ;
+        float turkce,matematik,fenbilgisi,sosyalbilgisi,ortalama;
+          System.out.print("Türkçe notu = ");
+          turkce = scan.nextFloat();
+          System.out.print("Matematik notunu giriniz = ");
+          matematik = scan.nextFloat();
+          System.out.print("Fen bilgisi notunu giriniz = ");
+          fenbilgisi = scan.nextFloat();
+          System.out.print("Sosyal bilgisi notunu giriniz = ");
+          sosyalbilgisi = scan.nextFloat();
+
+          ortalama = (matematik + fenbilgisi + sosyalbilgisi +turkce) / 4 ;
+
+          if (ortalama >= 50 ) {
+              System.out.println("Geçtiniz ! ");
+
+          }
+            else {
+               System.out.println("Kaldınız ! ");
+          }
+          System.out.println("Sınıf ortalaman = " + ortalama);
+    }
+}
+// Ders notları girilen öğrencinin ortalamasına göre Sınıfı geçme durumu
