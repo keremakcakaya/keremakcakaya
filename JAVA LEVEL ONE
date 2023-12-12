@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+       Scanner input = new Scanner(System.in);
+int vizenot,finalnot ;
+        System.out.print("Vize notunu giriniz = ");
+vizenot = input.nextInt();
+        System.out.print("Final notunu giriniz = ");
+finalnot = input.nextInt();
+
+double ortalama = (vizenot * 0.4) + (finalnot * 0.6) ;
+        System.out.println("Öğrencinin not ortalaması = " + ortalama);
+// Vize notu ve Final notu verilen öğrencinin ortalamasını hesaplayan kodu yazdım.
+
