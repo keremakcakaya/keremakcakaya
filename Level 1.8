@@ -1,0 +1,13 @@
+Scanner scan = new Scanner(System.in);
+    int a1 = 0 , a2 = 1;
+    int toplam;
+     System.out.print("Bir Sayı Giriniz = ");
+     int input  = scan.nextInt();
+       System.out.print(input + " Sayının Fibonacci Dizisi ");
+      for(int i = 1; i <= input; i++){
+       System.out.print(a1 + ",");
+        toplam = a1 + a2;
+                a1 = a2;
+             a2 = toplam;
+}
+// Kullanıcıdan girilen değer genişliğinde fibonacci dizisi oluşturma
